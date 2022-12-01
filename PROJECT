@@ -1,0 +1,16 @@
+domain: jiang.operator
+layout:
+- go.kubebuilder.io/v3
+projectName: operator-redis
+repo: golanglearning/new_project/operator-redis
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: jiang.operator
+  group: redis
+  kind: RedisCluster
+  path: golanglearning/new_project/operator-redis/api/v1
+  version: v1
+version: "3"

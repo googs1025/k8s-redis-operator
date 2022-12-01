@@ -1,0 +1,13 @@
+apiVersion: redis.jiang.operator/v1
+kind: RedisCluster
+metadata:
+  name: rediscluster-sample
+spec:
+  size: 2 # pod副本
+  image: redis:5-alpine # 镜像
+  service: true   # 自定义是否要配置Service
+  service_type: NodePort
+  ports: #端口
+    - port: 80
+      targetPort: 80 # 容器端口
+      nodePort: 30002 #service端口
