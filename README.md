@@ -20,9 +20,6 @@ spec:
 思路：
 
 自定义CRD启动时，会启动自己的Controller，并同时关联和拉起Deployment、Service(自定义)。
-
-![](https://github.com/googs1025/Kubernetes-operator-AppDeployer/blob/main/images/%E6%B5%81%E7%A8%8B%E5%9B%BE.jpg?raw=true)
-
 ### 附注
 1. 本项目依赖 kubebuilder kustomize k8s集群(kubeadm安装)，请先安装这些依赖
 ```bash
